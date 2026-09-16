@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Deletion — VolumeDial</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1c2024; --muted:#5b6470;
+    --accent:#2f6fed; --border:#e4e7ec; --code-bg:#f0f2f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161a; --card:#1c1f24; --text:#e7e9ec; --muted:#9aa3ad;
+      --accent:#6d9bff; --border:#2c3036; --code-bg:#22262c; }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px;}
+  header.page-head{margin-bottom:28px;}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .brand-badge{width:34px;height:34px;border-radius:9px;background:var(--accent);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;flex:none;}
+  .brand-name{font-weight:600;font-size:15px;color:var(--muted);}
+  h1{font-size:26px;margin:0 0 6px;}
+  .meta{color:var(--muted);font-size:14px;margin-bottom:8px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:28px 26px;box-shadow:0 1px 2px rgba(0,0,0,.03);}
+  h2{font-size:19px;margin:32px 0 10px;}
+  .card h2:first-child{margin-top:0;}
+  p{margin:0 0 14px;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ol,ul{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:6px;}
+  .contact-box{margin-top:18px;padding:16px 18px;background:var(--code-bg);border-radius:10px;font-size:14px;}
+  nav.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  nav.crumbs a{color:var(--muted);}
+  footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <div class="brand">
+      <div class="brand-badge">CG</div>
+      <div class="brand-name">CauGiay Hotel</div>
+    </div>
+    <h1>Data Deletion</h1>
+    <div class="meta">VolumeDial &middot; Effective date: September 16, 2026</div>
+    <nav class="crumbs"><a href="../privacy/">Privacy Policy</a> &nbsp;·&nbsp; <a href="../terms/">Terms of Use</a></nav>
+  </header>
+
+  <div class="card">
+    <p>VolumeDial does not have user accounts or sign-in, so there is no account to delete. This page
+      explains how to remove the data the App does hold, split into what stays on your device and what
+      Firebase (our analytics/crash-reporting provider) may hold.</p>
+
+    <h2>1. Data stored only on your device</h2>
+    <p>Your settings, dial styles, presets, excluded-app list, and any background image/GIF/font you
+      picked are stored entirely in the App&rsquo;s private storage on your device. To remove all of it
+      yourself, at any time:</p>
+    <ol>
+      <li>Open <strong>Android Settings → Apps → VolumeDial → Storage</strong>, then tap
+        <strong>Clear storage / Clear data</strong> — this deletes all locally saved settings, presets,
+        and imported files immediately; or</li>
+      <li><strong>Uninstall VolumeDial</strong> — this removes the App and all of its locally stored data
+        from your device.</li>
+    </ol>
+    <p>No confirmation from us is needed for either action, since this data never leaves your device.</p>
+
+    <h2>2. Data processed by Firebase (Analytics, Crashlytics, Remote Config)</h2>
+    <p>The App uses Google Firebase for basic analytics and crash reporting (see our
+      <a href="../privacy/">Privacy Policy</a> § 3). This data is tied to your device/install, not to a
+      personal account, because VolumeDial has no login system. To request deletion of this data:</p>
+    <ol>
+      <li>Email us at <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a> with the subject
+        &ldquo;VolumeDial data deletion request&rdquo;.</li>
+      <li>Include the approximate date(s) you used the App and your device model, so we can help
+        Google/Firebase locate the relevant install-level records.</li>
+      <li>We will forward your request to Google/Firebase and confirm with you once it has been processed.
+        Typical processing time is up to 30 days, consistent with Firebase&rsquo;s own data-deletion
+        timelines.</li>
+    </ol>
+    <p>You can also stop new analytics/crash data from being generated at any time simply by uninstalling
+      the App — no data is collected once the App is removed from your device.</p>
+
+    <h2>3. Contact</h2>
+    <div class="contact-box">
+      CauGiay Hotel<br>
+      Email: <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 CauGiay Hotel · VolumeDial</footer>
+</div>
+</body>
+</html>

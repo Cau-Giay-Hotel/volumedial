@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — VolumeDial</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1c2024; --muted:#5b6470;
+    --accent:#2f6fed; --border:#e4e7ec; --code-bg:#f0f2f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161a; --card:#1c1f24; --text:#e7e9ec; --muted:#9aa3ad;
+      --accent:#6d9bff; --border:#2c3036; --code-bg:#22262c; }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px;}
+  header.page-head{margin-bottom:28px;}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .brand-badge{width:34px;height:34px;border-radius:9px;background:var(--accent);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;flex:none;}
+  .brand-name{font-weight:600;font-size:15px;color:var(--muted);}
+  h1{font-size:26px;margin:0 0 6px;}
+  .meta{color:var(--muted);font-size:14px;margin-bottom:8px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:28px 26px;box-shadow:0 1px 2px rgba(0,0,0,.03);}
+  h2{font-size:19px;margin:32px 0 10px;}
+  .card h2:first-child{margin-top:0;}
+  h3{font-size:16px;margin:20px 0 8px;}
+  p{margin:0 0 14px;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ul,ol{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:6px;}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:top;}
+  th{color:var(--muted);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -2px;}
+  code{background:var(--code-bg);padding:1px 6px;border-radius:5px;font-size:13px;}
+  .contact-box{margin-top:18px;padding:16px 18px;background:var(--code-bg);border-radius:10px;font-size:14px;}
+  nav.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  nav.crumbs a{color:var(--muted);}
+  footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <div class="brand">
+      <div class="brand-badge">CG</div>
+      <div class="brand-name">CauGiay Hotel</div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">VolumeDial &middot; Effective date: September 16, 2026</div>
+    <nav class="crumbs"><a href="../terms/">Terms of Use</a> &nbsp;·&nbsp; <a href="../delete-account/">Data Deletion</a></nav>
+  </header>
+
+  <div class="card">
+    <p>VolumeDial is developed for <strong>CauGiay Hotel</strong>. This Privacy Policy explains what
+    information VolumeDial (&ldquo;the App&rdquo;) accesses, why, and how it is handled. It reflects the
+    App&rsquo;s actual code and configuration, and is kept up to date whenever the App&rsquo;s data
+    behaviour changes.</p>
+    <p>If you have questions about this policy, contact us at
+      <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a>.</p>
+
+    <h2>1. Summary</h2>
+    <ul>
+      <li>VolumeDial has <strong>no user accounts, no sign-in, and no backend server of its own</strong>.
+        Your settings, presets, and any image/GIF/font you pick are stored <strong>only on your device</strong>.</li>
+      <li>The App uses <strong>Google Firebase</strong> (Analytics, Crashlytics, Remote Config) for basic
+        product analytics, crash diagnostics, and remote configuration. These are the only services that
+        receive data from the App.</li>
+      <li>The App does <strong>not</strong> contain any advertising SDK (no AdMob, no AppLovin, no other ad
+        network) and does <strong>not</strong> contain any in-app purchase / billing system.</li>
+      <li>The Accessibility Service used to detect volume-key presses does <strong>not</strong> read, log,
+        or transmit the content shown on your screen or in other apps.</li>
+    </ul>
+
+    <h2>2. Permissions the App requests, and what each one is for</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>Permission</th><th>What it is used for</th></tr>
+      <tr><td>Display over other apps</td><td>Required to draw the floating volume dial on top of whatever app you&rsquo;re using when you press the volume keys.</td></tr>
+      <tr><td>Accessibility Service</td><td>Required so the App can detect physical volume-key presses (Android does not allow apps to intercept hardware key events any other way) and to know which app is currently in the foreground, so the dial can be skipped for apps you&rsquo;ve chosen to exclude (e.g. camera or phone apps). <strong>The App does not read, collect, or share the content of your screen or of other apps</strong> — see § 4.</td></tr>
+      <tr><td>Foreground service / &ldquo;Special use&rdquo; foreground service</td><td>Keeps the overlay ready to appear the instant you press a volume key, with a persistent notification as Android requires for any always-on background service.</td></tr>
+      <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Shows that persistent &ldquo;volume overlay is running&rdquo; notification. Not used to read notifications from other apps.</td></tr>
+      <tr><td>Modify audio settings</td><td>Lets the App change your device&rsquo;s media volume when you use the dial or press the volume keys.</td></tr>
+      <tr><td>Vibrate</td><td>Produces the haptic feedback you can customize for volume changes and limit boundaries.</td></tr>
+      <tr><td>Notification access (optional)</td><td>Only if you separately grant this in Android system settings, the App can read the title of the track currently playing to show a &ldquo;now playing&rdquo; label on the dial. Not used to read the text/content of your notifications. Off unless you turn it on.</td></tr>
+      <tr><td>Ignore battery optimizations (optional)</td><td>Lets you exempt VolumeDial from battery optimization so the background service isn&rsquo;t stopped by the system. Entirely optional and user-initiated.</td></tr>
+      <tr><td>Internet / network state</td><td>The App itself has no backend and does not upload your settings or files anywhere. Needed because the bundled Firebase SDKs (§ 3) require network access to send analytics/crash data and fetch remote configuration.</td></tr>
+      <tr><td>Notification policy access, Wake lock</td><td>Standard Android permissions declared for background-service/audio interoperability. Neither is used by VolumeDial to read personal data, your contacts, or the content of your notifications.</td></tr>
+    </table>
+    </div>
+
+    <h2>3. Third-party services</h2>
+    <p>VolumeDial uses the following third-party services, and no others:</p>
+    <h3>Google Firebase (Analytics, Crashlytics, Remote Config)</h3>
+    <p>The App includes the Firebase SDK, which automatically collects:</p>
+    <ul>
+      <li><strong>Analytics</strong>: standard app-usage events (such as app opens and screen views) and
+        device/install identifiers, used to understand how the App is used in aggregate.</li>
+      <li><strong>Crashlytics</strong>: crash and error reports (stack traces, device model, OS version)
+        when the App crashes or hangs, used to find and fix bugs.</li>
+      <li><strong>Remote Config</strong>: fetches configuration values from Firebase&rsquo;s servers so we
+        can adjust certain app behaviour without shipping a new version.</li>
+    </ul>
+    <p>This data is processed by Google under Firebase&rsquo;s own terms and privacy policy
+      (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>).
+      We do not combine this data with any personally identifying information, because VolumeDial has no
+      account system to tie it to.</p>
+    <p><strong>No other third party receives data from VolumeDial.</strong> In particular:</p>
+    <ul>
+      <li>No advertising SDK is included in the App (no AdMob, no AppLovin, no other ad network) —
+        verified directly against the App&rsquo;s build configuration.</li>
+      <li>No analytics SDK other than Firebase is included.</li>
+      <li>No in-app purchase / billing library is included.</li>
+    </ul>
+
+    <h2>4. The Accessibility Service, in detail</h2>
+    <p>Android requires an Accessibility Service in order for an app to detect and act on physical
+      volume-key presses while running in the background (there is no other public API for this).
+      VolumeDial&rsquo;s Accessibility Service is used <strong>only</strong> to:</p>
+    <ol>
+      <li>Detect volume-up / volume-down key presses so it can adjust the media volume and show the custom dial.</li>
+      <li>Read which app package is currently in the foreground, so the dial can be skipped for apps on your
+        personal exclusion list.</li>
+    </ol>
+    <p>The service&rsquo;s configuration also requests the Android capability needed to receive key-event
+      callbacks (a required technical combination on Android), but VolumeDial&rsquo;s code does not read,
+      store, log, analyze, or transmit anything about the text, images, or layout displayed on your screen
+      or inside other apps — that data is never accessed by the App&rsquo;s logic. You can review or revoke
+      this permission at any time from Android Settings → Accessibility.</p>
+
+    <h2>5. Where your data is stored</h2>
+    <ul>
+      <li><strong>Settings, dial appearance, haptics, gestures, excluded-app list, and saved presets</strong>
+        are stored in local app storage on your device (Android DataStore). They are never uploaded anywhere.</li>
+      <li><strong>Background images/GIFs and custom fonts you choose</strong> are copied into the
+        App&rsquo;s private storage on your device so they remain available after you close the file
+        picker. They stay on your device.</li>
+      <li>Uninstalling the App, or clearing its storage from Android Settings, permanently deletes all of
+        the above from your device.</li>
+    </ul>
+
+    <h2>6. Children&rsquo;s privacy</h2>
+    <p>VolumeDial is a general-purpose utility and is not directed at children. We do not knowingly collect
+      personal information from children. If you believe a child has provided us information, contact us
+      at <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a> and we will address it.</p>
+
+    <h2>7. Your choices</h2>
+    <ul>
+      <li>You can deny or revoke the Accessibility Service, overlay, notification-access, or
+        battery-optimization permissions at any time from Android Settings; the corresponding feature will
+        simply stop working.</li>
+      <li>You can uninstall the App at any time, which removes all locally stored settings and files.</li>
+      <li>See our <a href="../delete-account/">Data Deletion</a> page for more detail on removing data
+        associated with the App.</li>
+    </ul>
+
+    <h2>8. Changes to this policy</h2>
+    <p>We may update this Privacy Policy as the App&rsquo;s features or the services it uses change. We
+      will update the effective date above when we do. Continued use of the App after a change means you
+      accept the updated policy.</p>
+
+    <h2>9. Contact us</h2>
+    <div class="contact-box">
+      CauGiay Hotel<br>
+      Email: <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 CauGiay Hotel · VolumeDial</footer>
+</div>
+</body>
+</html>
